@@ -1,0 +1,10 @@
+{
+  "name": "moquim-foundation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Moquim Foundation website — static pages plus a chat endpoint.",
+  "engines": {
+    "node": ">=20"
+  }
+}
