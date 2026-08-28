@@ -556,10 +556,9 @@ footer .flogo{height:78px;width:auto;margin:0 auto 14px;display:block}
   background:var(--mat-thick);
   -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
   border-top:.5px solid var(--rule);
-  padding:7px 12px calc(7px + env(safe-area-inset-bottom));gap:8px;min-height:52px;align-items:center}
-.mbar .cta{flex:1}
-.mbar .tel{flex:none;width:52px;border:.5px solid var(--rule);border-radius:100px;
-  display:grid;place-items:center;color:var(--crimson);background:var(--surface)}
+  padding:8px 14px calc(8px + env(safe-area-inset-bottom));min-height:56px;align-items:center}
+.mbar .cta{flex:1;width:100%;justify-content:center}
+
 .drawer{position:fixed;inset:0;z-index:200;background:var(--paper);
   overflow-y:auto;padding:20px var(--gut) 90px;
   transform:translateX(100%);will-change:transform;touch-action:pan-y}
@@ -1004,3 +1003,10 @@ picture{display:contents}
 .vals p{color:rgba(255,255,255,.66);font-size:14px;line-height:1.6}
 @media (max-width:900px){ .vgrid{grid-template-columns:1fr} .vals{grid-template-columns:1fr 1fr} }
 @media (max-width:600px){ .vals{grid-template-columns:1fr} }
+
+/* the giving call on each focus page */
+.give-cta{background:var(--paper-2);border-top:.5px solid var(--rule)}
+.give-cta .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.give-cta .note{background:var(--surface);border:.5px solid var(--rule);
+  border-radius:var(--r-sm);padding:14px 16px;margin-top:14px;
+  font-size:14px;line-height:1.6;color:var(--ink-2)}
