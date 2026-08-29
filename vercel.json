@@ -90,6 +90,11 @@
   },
   "redirects": [
     {
+      "source": "/about-us.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
       "source": "/about-us",
       "destination": "/about.html",
       "permanent": true
@@ -106,6 +111,11 @@
     },
     {
       "source": "/about-us.htm",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/aboutus.html",
       "destination": "/about.html",
       "permanent": true
     },
@@ -150,6 +160,11 @@
       "permanent": true
     },
     {
+      "source": "/our-story.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
       "source": "/our-story",
       "destination": "/about.html",
       "permanent": true
@@ -166,6 +181,11 @@
     },
     {
       "source": "/our-story.htm",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/who-we-are.html",
       "destination": "/about.html",
       "permanent": true
     },
@@ -190,6 +210,36 @@
       "permanent": true
     },
     {
+      "source": "/about-moquim.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-moquim",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-moquim/",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-moquim.php",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/about-moquim.htm",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
       "source": "/contact-us",
       "destination": "/contact.html",
       "permanent": true
@@ -206,6 +256,11 @@
     },
     {
       "source": "/contact-us.htm",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/contactus.html",
       "destination": "/contact.html",
       "permanent": true
     },
@@ -270,6 +325,11 @@
       "permanent": true
     },
     {
+      "source": "/womens-empowerment.html",
+      "destination": "/women-empowerment.html",
+      "permanent": true
+    },
+    {
       "source": "/womens-empowerment",
       "destination": "/women-empowerment.html",
       "permanent": true
@@ -286,6 +346,11 @@
     },
     {
       "source": "/womens-empowerment.htm",
+      "destination": "/women-empowerment.html",
+      "permanent": true
+    },
+    {
+      "source": "/women.html",
       "destination": "/women-empowerment.html",
       "permanent": true
     },
@@ -310,6 +375,11 @@
       "permanent": true
     },
     {
+      "source": "/support-moquim-foundation.html",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
       "source": "/support-moquim-foundation",
       "destination": "/you-can-help.html",
       "permanent": true
@@ -326,6 +396,11 @@
     },
     {
       "source": "/support-moquim-foundation.htm",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/support.html",
       "destination": "/you-can-help.html",
       "permanent": true
     },
@@ -350,42 +425,7 @@
       "permanent": true
     },
     {
-      "source": "/donate",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate/",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate.php",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate.htm",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate-now",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate-now/",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate-now.php",
-      "destination": "/you-can-help.html",
-      "permanent": true
-    },
-    {
-      "source": "/donate-now.htm",
+      "source": "/support-us.html",
       "destination": "/you-can-help.html",
       "permanent": true
     },
@@ -410,6 +450,56 @@
       "permanent": true
     },
     {
+      "source": "/donate.html",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate/",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate.php",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate.htm",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-now.html",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-now",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-now/",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-now.php",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/donate-now.htm",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
       "source": "/you-can-help",
       "destination": "/you-can-help.html",
       "permanent": true
@@ -430,6 +520,11 @@
       "permanent": true
     },
     {
+      "source": "/food-and-sanitation.html",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
       "source": "/food-and-sanitation",
       "destination": "/food-relief.html",
       "permanent": true
@@ -446,6 +541,11 @@
     },
     {
       "source": "/food-and-sanitation.htm",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
+      "source": "/food-sanitation.html",
       "destination": "/food-relief.html",
       "permanent": true
     },
@@ -470,6 +570,11 @@
       "permanent": true
     },
     {
+      "source": "/food.html",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
       "source": "/food",
       "destination": "/food-relief.html",
       "permanent": true
@@ -486,6 +591,11 @@
     },
     {
       "source": "/food.htm",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
+      "source": "/sanitation.html",
       "destination": "/food-relief.html",
       "permanent": true
     },
@@ -510,6 +620,26 @@
       "permanent": true
     },
     {
+      "source": "/food-relief",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
+      "source": "/food-relief/",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
+      "source": "/food-relief.php",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
+      "source": "/food-relief.htm",
+      "destination": "/food-relief.html",
+      "permanent": true
+    },
+    {
       "source": "/healthcare",
       "destination": "/healthcare.html",
       "permanent": true
@@ -530,6 +660,11 @@
       "permanent": true
     },
     {
+      "source": "/health-care.html",
+      "destination": "/healthcare.html",
+      "permanent": true
+    },
+    {
       "source": "/health-care",
       "destination": "/healthcare.html",
       "permanent": true
@@ -546,6 +681,11 @@
     },
     {
       "source": "/health-care.htm",
+      "destination": "/healthcare.html",
+      "permanent": true
+    },
+    {
+      "source": "/health.html",
       "destination": "/healthcare.html",
       "permanent": true
     },
@@ -590,26 +730,6 @@
       "permanent": true
     },
     {
-      "source": "/our-environment",
-      "destination": "/environment.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-environment/",
-      "destination": "/environment.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-environment.php",
-      "destination": "/environment.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-environment.htm",
-      "destination": "/environment.html",
-      "permanent": true
-    },
-    {
       "source": "/education",
       "destination": "/education.html",
       "permanent": true
@@ -626,26 +746,6 @@
     },
     {
       "source": "/education.htm",
-      "destination": "/education.html",
-      "permanent": true
-    },
-    {
-      "source": "/education-youth",
-      "destination": "/education.html",
-      "permanent": true
-    },
-    {
-      "source": "/education-youth/",
-      "destination": "/education.html",
-      "permanent": true
-    },
-    {
-      "source": "/education-youth.php",
-      "destination": "/education.html",
-      "permanent": true
-    },
-    {
-      "source": "/education-youth.htm",
       "destination": "/education.html",
       "permanent": true
     },
@@ -670,26 +770,6 @@
       "permanent": true
     },
     {
-      "source": "/sports-wellness",
-      "destination": "/sports.html",
-      "permanent": true
-    },
-    {
-      "source": "/sports-wellness/",
-      "destination": "/sports.html",
-      "permanent": true
-    },
-    {
-      "source": "/sports-wellness.php",
-      "destination": "/sports.html",
-      "permanent": true
-    },
-    {
-      "source": "/sports-wellness.htm",
-      "destination": "/sports.html",
-      "permanent": true
-    },
-    {
       "source": "/what-we-do",
       "destination": "/what-we-do.html",
       "permanent": true
@@ -710,23 +790,8 @@
       "permanent": true
     },
     {
-      "source": "/our-work",
-      "destination": "/events.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-work/",
-      "destination": "/events.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-work.php",
-      "destination": "/events.html",
-      "permanent": true
-    },
-    {
-      "source": "/our-work.htm",
-      "destination": "/events.html",
+      "source": "/our-focus-areas.html",
+      "destination": "/what-we-do.html",
       "permanent": true
     },
     {
@@ -746,6 +811,11 @@
     },
     {
       "source": "/our-focus-areas.htm",
+      "destination": "/what-we-do.html",
+      "permanent": true
+    },
+    {
+      "source": "/focus-areas.html",
       "destination": "/what-we-do.html",
       "permanent": true
     },
@@ -770,6 +840,11 @@
       "permanent": true
     },
     {
+      "source": "/programs.html",
+      "destination": "/what-we-do.html",
+      "permanent": true
+    },
+    {
       "source": "/programs",
       "destination": "/what-we-do.html",
       "permanent": true
@@ -786,6 +861,11 @@
     },
     {
       "source": "/programs.htm",
+      "destination": "/what-we-do.html",
+      "permanent": true
+    },
+    {
+      "source": "/programmes.html",
       "destination": "/what-we-do.html",
       "permanent": true
     },
@@ -810,63 +890,28 @@
       "permanent": true
     },
     {
-      "source": "/gallery",
-      "destination": "/gallery.html",
+      "source": "/our-work.html",
+      "destination": "/events.html",
       "permanent": true
     },
     {
-      "source": "/gallery/",
-      "destination": "/gallery.html",
+      "source": "/our-work",
+      "destination": "/events.html",
       "permanent": true
     },
     {
-      "source": "/gallery.php",
-      "destination": "/gallery.html",
+      "source": "/our-work/",
+      "destination": "/events.html",
       "permanent": true
     },
     {
-      "source": "/gallery.htm",
-      "destination": "/gallery.html",
+      "source": "/our-work.php",
+      "destination": "/events.html",
       "permanent": true
     },
     {
-      "source": "/photo-gallery",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photo-gallery/",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photo-gallery.php",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photo-gallery.htm",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photos",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photos/",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photos.php",
-      "destination": "/gallery.html",
-      "permanent": true
-    },
-    {
-      "source": "/photos.htm",
-      "destination": "/gallery.html",
+      "source": "/our-work.htm",
+      "destination": "/events.html",
       "permanent": true
     },
     {
@@ -886,6 +931,11 @@
     },
     {
       "source": "/events.htm",
+      "destination": "/events.html",
+      "permanent": true
+    },
+    {
+      "source": "/activities.html",
       "destination": "/events.html",
       "permanent": true
     },
@@ -910,23 +960,73 @@
       "permanent": true
     },
     {
-      "source": "/our-events",
-      "destination": "/events.html",
+      "source": "/gallery",
+      "destination": "/gallery.html",
       "permanent": true
     },
     {
-      "source": "/our-events/",
-      "destination": "/events.html",
+      "source": "/gallery/",
+      "destination": "/gallery.html",
       "permanent": true
     },
     {
-      "source": "/our-events.php",
-      "destination": "/events.html",
+      "source": "/gallery.php",
+      "destination": "/gallery.html",
       "permanent": true
     },
     {
-      "source": "/our-events.htm",
-      "destination": "/events.html",
+      "source": "/gallery.htm",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photo-gallery.html",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photo-gallery",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photo-gallery/",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photo-gallery.php",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photo-gallery.htm",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photos.html",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photos",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photos/",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photos.php",
+      "destination": "/gallery.html",
+      "permanent": true
+    },
+    {
+      "source": "/photos.htm",
+      "destination": "/gallery.html",
       "permanent": true
     },
     {
@@ -946,6 +1046,11 @@
     },
     {
       "source": "/volunteer.htm",
+      "destination": "/volunteer.html",
+      "permanent": true
+    },
+    {
+      "source": "/join-us.html",
       "destination": "/volunteer.html",
       "permanent": true
     },
@@ -970,6 +1075,11 @@
       "permanent": true
     },
     {
+      "source": "/get-involved.html",
+      "destination": "/volunteer.html",
+      "permanent": true
+    },
+    {
       "source": "/get-involved",
       "destination": "/volunteer.html",
       "permanent": true
@@ -987,6 +1097,11 @@
     {
       "source": "/get-involved.htm",
       "destination": "/volunteer.html",
+      "permanent": true
+    },
+    {
+      "source": "/founder.html",
+      "destination": "/our-founder.html",
       "permanent": true
     },
     {
@@ -1050,6 +1165,11 @@
       "permanent": true
     },
     {
+      "source": "/our-journey.html",
+      "destination": "/journey.html",
+      "permanent": true
+    },
+    {
       "source": "/our-journey",
       "destination": "/journey.html",
       "permanent": true
@@ -1090,6 +1210,11 @@
       "permanent": true
     },
     {
+      "source": "/news.html",
+      "destination": "/latest.html",
+      "permanent": true
+    },
+    {
       "source": "/news",
       "destination": "/latest.html",
       "permanent": true
@@ -1106,6 +1231,11 @@
     },
     {
       "source": "/news.htm",
+      "destination": "/latest.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog.html",
       "destination": "/latest.html",
       "permanent": true
     },
@@ -1130,6 +1260,56 @@
       "permanent": true
     },
     {
+      "source": "/annual-reports.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/annual-reports",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/annual-reports/",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/annual-reports.php",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/annual-reports.htm",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-partnerships.html",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-partnerships",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-partnerships/",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-partnerships.php",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-partnerships.htm",
+      "destination": "/you-can-help.html",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy.html",
       "permanent": true
@@ -1146,6 +1326,11 @@
     },
     {
       "source": "/privacy.htm",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
       "destination": "/privacy.html",
       "permanent": true
     },
@@ -1190,6 +1375,11 @@
       "permanent": true
     },
     {
+      "source": "/terms-conditions.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
       "source": "/terms-conditions",
       "destination": "/terms.html",
       "permanent": true
@@ -1206,6 +1396,31 @@
     },
     {
       "source": "/terms-conditions.htm",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions/",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.php",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.htm",
       "destination": "/terms.html",
       "permanent": true
     },
@@ -1250,6 +1465,11 @@
       "permanent": true
     },
     {
+      "source": "/home.html",
+      "destination": "/index.html",
+      "permanent": true
+    },
+    {
       "source": "/home",
       "destination": "/index.html",
       "permanent": true
@@ -1290,6 +1510,11 @@
       "permanent": true
     },
     {
+      "source": "/nayeema-health-camp-2026.html",
+      "destination": "/nayeem-health-camp-2026.html",
+      "permanent": true
+    },
+    {
       "source": "/nayeema-health-camp-2026",
       "destination": "/nayeem-health-camp-2026.html",
       "permanent": true
@@ -1306,11 +1531,6 @@
     },
     {
       "source": "/nayeema-health-camp-2026.htm",
-      "destination": "/nayeem-health-camp-2026.html",
-      "permanent": true
-    },
-    {
-      "source": "/nayeema-health-camp-2026.html",
       "destination": "/nayeem-health-camp-2026.html",
       "permanent": true
     }
