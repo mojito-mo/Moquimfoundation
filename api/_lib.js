@@ -110,8 +110,23 @@ export async function sheetAppend(kind, row) {
       redirect: 'follow',
       signal: AbortSignal.timeout(9000)
     });
-    const out = await r.json().catch(() => ({}));
-    return !!(r.ok && out.ok);
+    const text = await r.text();
+    let out = {};
+    try { out = JSON.parse(text); } catch { /* Apps Script served HTML, not JSON */ }
+
+    if (r.ok && out.ok) return true;
+
+    /* Say plainly what went wrong, in the Vercel runtime log. The reason
+       comes from our own script and names no personal data, so it is safe
+       to record. An HTML body almost always means a sign-in page, which
+       means the deployment is not open to "Anyone". */
+    const why = out.error
+      ? out.error
+      : text.slice(0, 120).includes('<')
+        ? 'the script returned a web page, not JSON. Check Who has access is set to Anyone.'
+        : 'unexpected reply: ' + text.slice(0, 120);
+    console.error('sheet append refused', kind, 'status', r.status, why);
+    return false;
   } catch (err) {
     console.error('sheet append failed', kind, String(err.message || err));
     return false;
