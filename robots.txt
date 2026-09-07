@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/img2/t/
 
 Sitemap: https://moquimfoundation.org/sitemap.xml

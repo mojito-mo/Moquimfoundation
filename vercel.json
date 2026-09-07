@@ -90,6 +90,11 @@
   },
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/about-us.html",
       "destination": "/about.html",
       "permanent": true

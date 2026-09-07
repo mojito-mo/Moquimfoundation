@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────────────────────────────────
+#  Moquim Foundation, website
+#
+#  Everything listed here is deliberately kept OUT of the repository.
+#  Git history is permanent, so anything committed once is very hard to
+#  remove later. Read the notes before deleting a line.
+# ─────────────────────────────────────────────────────────────────────
+
+# ── Photographs withdrawn from the site ──────────────────────────────
+#  These frames were taken inside a political party office and show
+#  party branding in the background. A registered charitable trust must
+#  not appear politically aligned, so they must never enter the history.
+assets/img2/covid-08.*
+assets/img2/covid-09.*
+assets/img2/covid-10.*
+assets/img2/covid-12.*
+assets/img2/covid-14.*
+assets/img2/covid-21.*
+assets/img2/covid-22.*
+assets/img2/covid-23.*
+assets/img2/covid-26.*
+assets/img2/covid-32.*
+assets/img2/t/covid-08.*
+assets/img2/t/covid-09.*
+assets/img2/t/covid-10.*
+assets/img2/t/covid-12.*
+assets/img2/t/covid-14.*
+assets/img2/t/covid-21.*
+assets/img2/t/covid-22.*
+assets/img2/t/covid-23.*
+assets/img2/t/covid-26.*
+assets/img2/t/covid-32.*
+
+#  The two office frames the founder asked to withdraw
+assets/img2/covid-41.*
+assets/img2/covid-42.*
+assets/img2/t/covid-41.*
+assets/img2/t/covid-42.*
+
+# ── Superseded by the corrected spelling, Nayeem not Nayeema ─────────
+*nayeema*
+
+# ── The old cropped image set, replaced by assets/img2 ───────────────
+assets/img/
+
+# ── Features that were removed from the site ────────────────────────
+#  The assistant. Delete these lines if it is ever switched back on.
+assets/js/chat.js
+api/chat.js
+api/knowledge.js
+api/health.js
+#  The WebGL globe, withdrawn because it did not render.
+assets/js/globe.js
+assets/js/vendor/
+assets/data/
+
+# ── Secrets. These must never be committed. ─────────────────────────
+#  Keys live in the Vercel dashboard as environment variables only.
+.env
+.env.*
+*.pem
+*.key
+
+# ── Local noise ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.Zone.Identifier
+node_modules/
+.vercel/
+.netlify/
+*.log
