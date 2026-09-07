@@ -43,7 +43,16 @@ export default async function handler(req, res) {
         currency: 'INR',
         receipt,
         payment_capture: 1,
-        notes: { purpose: 'Donation to Moquim Foundation' }   // no PII in notes
+        /* Notes carry the donor's name and our receipt number, and nothing
+           else. The webhook is the only place a donation is recorded, and it
+           has no other way to learn who gave. Razorpay already holds the
+           card; a name alongside it adds nothing it does not have. No
+           address, no amount breakdown, no identity document. */
+        notes: {
+          purpose: 'Donation to Moquim Foundation',
+          donor_name: name || '',
+          receipt
+        }
       })
     });
 

@@ -1,7 +1,7 @@
 /* Razorpay webhook. This is the authoritative record: it fires even if the
    donor closes the tab before the browser can confirm. Every request is
    signature-checked against the raw body before anything is trusted. */
-import { CFG, safeEqual, json } from './_lib.js';
+import { CFG, safeEqual, json, sheetAppend } from './_lib.js';
 import crypto from 'node:crypto';
 
 // Vercel would otherwise parse the body and change the bytes we must hash.
@@ -55,6 +55,31 @@ export default async function handler(req, res) {
   if (pay && (evt.event === 'payment.captured' || evt.event === 'payment.failed')) {
     // Identifiers and amounts only. Never card data, never a full contact.
     console.log('webhook', evt.event, pay.id, pay.amount, pay.currency);
+
+    /* The spreadsheet row. This runs only after the signature has been
+       verified and only once per event, so the Donations tab is a record of
+       real, confirmed payments rather than attempts. Failed payments are
+       recorded too, marked as such, because a donor who calls to ask what
+       happened deserves an answer.
+
+       Deliberately awaited: Vercel may freeze the function the moment the
+       response is sent, and a fire-and-forget write would sometimes be cut
+       off halfway. If the sheet is unreachable, sheetAppend returns false
+       and we still answer 200, because the payment itself is not in doubt
+       and Razorpay must not be told to retry. */
+    const notes = pay.notes || {};
+    await sheetAppend('donation', [
+      notes.receipt || ('MF-' + String(pay.id).replace(/^pay_/, '').toUpperCase()),
+      (pay.amount || 0) / 100,
+      notes.donor_name || '',
+      pay.email || '',
+      pay.contact || '',
+      pay.id,
+      pay.order_id || '',
+      pay.method || '',
+      evt.event === 'payment.captured' ? 'Received' : 'Failed'
+    ]);
+
     if (CFG.notifyUrl) {
       fetch(CFG.notifyUrl, {
         method: 'POST',

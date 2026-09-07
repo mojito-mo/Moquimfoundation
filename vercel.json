@@ -86,6 +86,9 @@
     },
     "api/donate-webhook.js": {
       "maxDuration": 15
+    },
+    "api/submit.js": {
+      "maxDuration": 15
     }
   },
   "redirects": [

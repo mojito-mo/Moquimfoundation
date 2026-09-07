@@ -61,6 +61,13 @@ assets/data/
 *.pem
 *.key
 
+# ── Internal notes ──────────────────────────────────────────────────
+#  Anything at the top level of this repo is served publicly, so the
+#  setup guides stay out. They name environment variables and describe
+#  how the endpoints are protected, which is nobody else's business.
+PUSH.md
+SHEETS-SETUP.md
+
 # ── Local noise ─────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
