@@ -98,6 +98,41 @@
       "permanent": true
     },
     {
+      "source": "/ngo-in-odisha-moquim-foundation",
+      "destination": "/ngo-in-odisha-moquim-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ngo-in-odisha-moquim-foundation/",
+      "destination": "/ngo-in-odisha-moquim-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ngo-in-odisha-moqim-foundation",
+      "destination": "/ngo-in-odisha-moquim-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ngo-in-odisha-moqim-foundation/",
+      "destination": "/ngo-in-odisha-moquim-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/ngo-in-odisha-moqim-foundation.html",
+      "destination": "/ngo-in-odisha-moquim-foundation.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
       "source": "/about-us.html",
       "destination": "/about.html",
       "permanent": true
