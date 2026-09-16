@@ -266,6 +266,43 @@ section.band,section.feat,section.yuva,section.artstory{padding-top:var(--sp-3)}
 .grid{display:grid;gap:clamp(16px,2.2vw,28px)}
 .g2{grid-template-columns:repeat(2,1fr)}
 .g3{grid-template-columns:repeat(3,1fr)}
+
+/* ── Blog ─────────────────────────────────────────────────────────────
+   Photographs inside a post. Every frame is cropped to the same ratio so
+   a portrait shot from a phone sits in the column at the same size as a
+   landscape one, rather than towering over the text. */
+.prose figure{margin:clamp(30px,4vw,46px) 0}
+.prose figure img{display:block;width:100%;height:100%;object-fit:cover;
+  object-position:center 40%;border-radius:var(--r-lg)}
+.prose figure .fr-im{display:block;overflow:hidden;border-radius:var(--r-lg);
+  aspect-ratio:16/9;background:var(--paper-2)}
+.prose figcaption{margin-top:12px;font-size:13px;color:var(--ink-3);line-height:1.55}
+
+/* The lead post, so a blog with one article still reads as designed
+   rather than as a grid with two holes in it. */
+.bigpost{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  align-items:stretch;border:.5px solid var(--rule);border-radius:var(--r-lg);
+  overflow:hidden;background:#fff;text-decoration:none;color:inherit;
+  transition:transform .32s cubic-bezier(.22,.61,.36,1),box-shadow .32s}
+.bigpost:hover{transform:translateY(-3px);box-shadow:var(--e3);border-color:transparent}
+.bigpost .im{overflow:hidden;background:var(--paper-2);aspect-ratio:4/3}
+.bigpost .im img{width:100%;height:100%;object-fit:cover;object-position:center 42%;
+  transition:transform .5s cubic-bezier(.22,.61,.36,1)}
+.bigpost:hover .im img{transform:scale(1.035)}
+.bigpost .bd{padding:clamp(26px,3.2vw,48px);display:flex;flex-direction:column;
+  justify-content:center}
+.bigpost .m{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:12px}
+.bigpost .m b{color:var(--crimson);font-weight:500}
+.bigpost h2{font-size:clamp(24px,2.6vw,34px);font-weight:400;line-height:1.2;
+  margin-bottom:12px}
+.bigpost p{font-size:15.5px;color:var(--ink-3);line-height:1.6}
+.bigpost .f{margin-top:20px;padding-top:15px;border-top:.5px solid var(--rule);
+  display:flex;gap:18px;font-size:12.5px;color:var(--ink-4)}
+@media (max-width:860px){
+  .bigpost{grid-template-columns:1fr}
+  .bigpost .im{aspect-ratio:16/9}
+}
 .g4{grid-template-columns:repeat(4,1fr)}
 
 .tile{position:relative;display:block;border-radius:var(--r-lg);overflow:hidden;
