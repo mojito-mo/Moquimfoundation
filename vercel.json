@@ -1278,28 +1278,13 @@
       "permanent": true
     },
     {
-      "source": "/blog.html",
-      "destination": "/latest.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog",
-      "destination": "/latest.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog/",
-      "destination": "/latest.html",
-      "permanent": true
-    },
-    {
       "source": "/blog.php",
-      "destination": "/latest.html",
+      "destination": "/blog.html",
       "permanent": true
     },
     {
       "source": "/blog.htm",
-      "destination": "/latest.html",
+      "destination": "/blog.html",
       "permanent": true
     },
     {
