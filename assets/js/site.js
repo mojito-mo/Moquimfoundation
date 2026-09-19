@@ -233,7 +233,6 @@
     function go(n) {
       i = (n + slides.length) % slides.length;
       var d = slides[i].dataset;
-      var od = document.documentElement.lang === 'or';
 
       slides.forEach(function (s, k) {
         var on = k === i;
@@ -248,9 +247,9 @@
       if (hH) {
         if (txt) txt.classList.add('out');
         setTimeout(function () {
-          if (hL) hL.textContent = (od && d.labelOd) || d.label || '';
-          hH.textContent = (od && d.hOd) || d.h || '';
-          if (hP) hP.textContent = (od && d.pOd) || d.p || '';
+          if (hL) hL.textContent = d.label || '';
+          hH.textContent = d.h || '';
+          if (hP) hP.textContent = d.p || '';
           if (txt) txt.classList.remove('out');
         }, REDUCE ? 0 : 260);
       }
@@ -539,59 +538,6 @@
     });
   });
 
-  /* ── language switch ──────────────────────────────────────────── */
-  (function () {
-    var OD = {
-      "About Us":"ଆମ ବିଷୟରେ","What We Do":"ଆମେ କ'ଣ କରୁ","Our Work":"ଆମର କାର୍ଯ୍ୟ",
-      "You Can Help":"ଆପଣ ସାହାଯ୍ୟ କରିପାରିବେ","Contact":"ଯୋଗାଯୋଗ","Contact Us":"ଆମ ସହ ଯୋଗାଯୋଗ",
-      "Donate Now":"ଏବେ ଦାନ କରନ୍ତୁ","Support Our Work":"ଆମ କାର୍ଯ୍ୟକୁ ସହଯୋଗ କରନ୍ତୁ",
-      "Volunteer":"ସ୍ୱେଚ୍ଛାସେବୀ","Volunteer With Us":"ଆମ ସହ ସ୍ୱେଚ୍ଛାସେବୀ ହୁଅନ୍ତୁ",
-      "Gallery":"ଗ୍ୟାଲେରୀ","Latest":"ସର୍ବଶେଷ","Home":"ମୂଳପୃଷ୍ଠା","Sitemap":"ସାଇଟମ୍ୟାପ",
-      "The Inception":"ଆରମ୍ଭ","Our Founder":"ଆମ ପ୍ରତିଷ୍ଠାତା","The Journey":"ଆମର ଯାତ୍ରା",
-      "Vision & Mission":"ଦୃଷ୍ଟି ଓ ଲକ୍ଷ୍ୟ","Legal & Registration":"ଆଇନଗତ ଓ ପଞ୍ଜୀକରଣ",
-      "Activities":"କାର୍ଯ୍ୟକ୍ରମ","All Activities":"ସମସ୍ତ କାର୍ଯ୍ୟକ୍ରମ",
-      "Healthcare":"ସ୍ୱାସ୍ଥ୍ୟସେବା","Food, Relief & Sanitation":"ଖାଦ୍ୟ, ରିଲିଫ ଓ ପରିମଳ",
-      "Women's Empowerment":"ମହିଳା ସଶକ୍ତିକରଣ","Environment":"ପରିବେଶ",
-      "Education & Youth":"ଶିକ୍ଷା ଓ ଯୁବ","Sports & Wellness":"କ୍ରୀଡ଼ା ଓ ସୁସ୍ଥତା",
-      "Key focus areas":"ମୁଖ୍ୟ କାର୍ଯ୍ୟକ୍ଷେତ୍ର","Recent activities":"ସାମ୍ପ୍ରତିକ କାର୍ଯ୍ୟକ୍ରମ",
-      "See the work":"କାର୍ଯ୍ୟ ଦେଖନ୍ତୁ","From the ground":"ମଇଦାନରୁ","Films":"ଚଳଚ୍ଚିତ୍ର",
-      "Find Us":"ଆମକୁ ଖୋଜନ୍ତୁ","Newsroom":"ସମ୍ବାଦକକ୍ଷ","Programme":"କାର୍ଯ୍ୟକ୍ରମ",
-      "Explore":"ଅଧିକ ଜାଣନ୍ତୁ","All activities":"ସମସ୍ତ କାର୍ଯ୍ୟକ୍ରମ",
-      "See all our work":"ଆମର ସମସ୍ତ କାର୍ଯ୍ୟ ଦେଖନ୍ତୁ","Read our story":"ଆମ କାହାଣୀ ପଢ଼ନ୍ତୁ",
-      "Open full gallery":"ସମ୍ପୂର୍ଣ୍ଣ ଗ୍ୟାଲେରୀ ଖୋଲନ୍ତୁ","Read his message":"ତାଙ୍କ ବାର୍ତ୍ତା ପଢ଼ନ୍ତୁ",
-      "Become a Member":"ସଦସ୍ୟ ହୁଅନ୍ତୁ","Privacy Policy":"ଗୋପନୀୟତା ନୀତି",
-      "Terms & Conditions":"ସର୍ତ୍ତାବଳୀ","Accessibility":"ଅଭିଗମ୍ୟତା",
-      "Humanity is our Priority":"ମାନବିକତା ଆମର ପ୍ରାଥମିକତା",
-      "Cuttack, Odisha":"କଟକ, ଓଡ଼ିଶା","Our Reach":"ଆମର ପରିସର",
-      "In the field":"କ୍ଷେତ୍ରରେ","Related":"ସମ୍ପର୍କିତ","Details":"ବିବରଣୀ",
-      "Date":"ତାରିଖ","Place":"ସ୍ଥାନ","Photographs":"ଫଟୋଚିତ୍ର","Phone":"ଫୋନ୍","Email":"ଇମେଲ",
-      "Office":"କାର୍ଯ୍ୟାଳୟ","Address":"ଠିକଣା","Message":"ବାର୍ତ୍ତା","Send Enquiry":"ପଠାନ୍ତୁ"
-    };
-    var ens = [document.getElementById('lang-en'), document.getElementById('lang-en-m')].filter(Boolean);
-    var ors = [document.getElementById('lang-od'), document.getElementById('lang-od-m')].filter(Boolean);
-    if (!ens.length || !ors.length) return;
-    var nodes = [].slice.call(document.querySelectorAll('[data-t]'));
-    nodes.forEach(function (n) { n.dataset.en = n.textContent.trim(); });
-
-    function apply(l) {
-      document.documentElement.lang = (l === 'or') ? 'or' : 'en';
-      nodes.forEach(function (n) {
-        var e = n.dataset.en;
-        n.textContent = (l === 'or' && OD[e]) ? OD[e] : e;
-      });
-      ors.forEach(function (b) { b.setAttribute('aria-pressed', l === 'or'); });
-      ens.forEach(function (b) { b.setAttribute('aria-pressed', l !== 'or'); });
-      var note = document.getElementById('lang-note');
-      if (note) note.hidden = (l !== 'or');
-      if (window.__heroRefresh) window.__heroRefresh();
-      try { localStorage.setItem('mf-lang', l); } catch (err) {}
-    }
-    ens.forEach(function (b) { b.addEventListener('click', function () { apply('en'); }); });
-    ors.forEach(function (b) { b.addEventListener('click', function () { apply('or'); }); });
-    var saved = 'en';
-    try { saved = localStorage.getItem('mf-lang') || 'en'; } catch (err) {}
-    apply(saved);
-  })();
 })();
 
 /* ── ambient sound ───────────────────────────────────────────────────
